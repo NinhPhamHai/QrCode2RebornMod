@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/transfer" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/transfer" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+        <FrameLayout android:orientation="vertical" android:id="@id/btn_on_off_flash_light" android:background="?android:selectableItemBackground" android:layout_width="50.0dip" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:id="@id/iv_flash_light" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/flaof" />
+        </FrameLayout>
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/tv_title_scan" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="56.0dip" android:layout_marginRight="56.0dip" android:text="@string/title_scan" android:maxLines="1" android:scrollHorizontally="true" />
+        <FrameLayout android:orientation="vertical" android:id="@id/btn_scan_gallery" android:background="?android:selectableItemBackground" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_toLeftOf="@id/btn_switch_camera">
+            <ImageView android:layout_gravity="center" android:layout_width="24.0dip" android:layout_height="24.0dip" app:srcCompat="@drawable/b" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:layout_gravity="right" android:orientation="vertical" android:id="@id/btn_switch_camera" android:background="?android:selectableItemBackground" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="center" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/caw" />
+        </FrameLayout>
+    </RelativeLayout>
+    <FrameLayout android:background="@color/transfer" android:paddingLeft="@dimen/_10sdp" android:paddingTop="@dimen/_20sdp" android:paddingRight="@dimen/_10sdp" android:paddingBottom="@dimen/_20sdp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <com.journeyapps.barcodescanner.DecoratedBarcodeView android:id="@id/barcode_scanner_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:zxing_scanner_layout="@layout/layout_custom_barcode_scanner" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_20sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_marginBottom="@dimen/_30sdp">
+            <ImageView android:id="@id/img_decrease_zoom" android:padding="@dimen/_5sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/blue" app:srcCompat="@drawable/ic_remove_black_24dp" />
+            <SeekBar android:id="@id/seekbar_zoom" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <ImageView android:id="@id/img_increase_zoom" android:padding="@dimen/_5sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/blue" app:srcCompat="@drawable/ic_add_black_24dp" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/fr_qr_details" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

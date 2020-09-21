@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/subview_create_back" />
+    <android.support.v4.widget.NestedScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/style_border_disable_click" android:paddingTop="@dimen/_10sdp" android:paddingBottom="@dimen/_10sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:src="@drawable/loca" />
+                <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/black_text_gray" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:text="@string/lbl_location" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/style_border_disable_click" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp">
+                <AutoCompleteTextView android:id="@id/et_latitude_location" android:background="@drawable/style_border_edittext" android:padding="@dimen/_10sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp" android:hint="@string/lbl_latitude" android:inputType="number" android:imeOptions="actionNext" />
+                <AutoCompleteTextView android:id="@id/et_longitude_location" android:background="@drawable/style_border_edittext" android:padding="@dimen/_10sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp" android:hint="@string/lbl_longitude" android:inputType="number" android:imeOptions="actionNext" />
+                <AutoCompleteTextView android:id="@id/et_query_location" android:background="@drawable/style_border_edittext" android:padding="@dimen/_10sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp" android:hint="@string/lbl_query" android:maxLines="1" android:singleLine="true" android:imeOptions="actionDone" />
+                <com.barcodescanner.codegeneratorx88.reader.d.c.b android:id="@id/map_view_location" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

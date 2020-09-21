@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/view_title_create" android:background="@color/transfer" android:layout_width="fill_parent" android:layout_height="?actionBarSize"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/view_back_create" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:background="@drawable/style_highlight_button" android:padding="@dimen/_10sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ib" />
+        <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_5sdp" android:text="@string/lbl_create_qrcode" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_save_qr_code" android:background="@drawable/style_highlight_button" android:padding="@dimen/_10sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/conf" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

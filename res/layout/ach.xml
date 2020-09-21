@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/container" android:background="@drawable/gradient_blue_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@color/transfer" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btn_back" android:background="@drawable/style_highlight_black" android:layout_width="?actionBarSize" android:layout_height="fill_parent">
+            <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/ib" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="right" android:orientation="vertical" android:id="@id/btn_delete_created_qr" android:background="@drawable/style_highlight_black" android:layout_width="?actionBarSize" android:layout_height="fill_parent">
+            <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/ide" />
+        </LinearLayout>
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="?actionBarSize" android:layout_marginRight="?actionBarSize" android:text="@string/lbl_created_qr_history" android:maxLines="1" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <android.support.v7.widget.RecyclerView android:id="@id/rv_created_qr_code" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="8.0dip" />
+        <RelativeLayout android:layout_gravity="center" android:id="@id/rl_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/_18sdp" android:gravity="center" android:id="@id/tv_no_qr_code" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_no_qrcode" android:layout_centerHorizontal="true" />
+            <FrameLayout android:id="@id/fr_container_ads" android:background="@drawable/style_border_ads" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_below="@id/tv_no_qr_code" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

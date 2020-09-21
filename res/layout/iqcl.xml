@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/view_group_details_item" android:background="@color/transfer" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:swipe="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/black" android:id="@id/tv_group_item" android:background="@drawable/rounded_corner_top_white_bg" android:padding="@dimen/_5sdp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/view_line_item" android:background="@color/black" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.c.swipe.SwipeLayout android:orientation="vertical" android:id="@id/swipe_item" android:background="#ffffffff" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" swipe:leftEdgeSwipeOffset="0.0dip" swipe:rightEdgeSwipeOffset="0.0dip">
+        <include layout="@layout/subview_item_right" />
+        <include layout="@layout/subview_item_left" />
+    </com.c.swipe.SwipeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_ads_container_item" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_border" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@drawable/rounded_corner_bottom_white_bg" android:layout_width="fill_parent" android:layout_height="@dimen/_10sdp" />
+        <View android:background="@color/transfer" android:layout_width="fill_parent" android:layout_height="@dimen/_20sdp" />
+    </LinearLayout>
+</LinearLayout>

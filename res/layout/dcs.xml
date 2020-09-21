@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/_10sdp" android:paddingTop="@dimen/_5sdp" android:paddingRight="@dimen/_10sdp" android:paddingBottom="@dimen/_5sdp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:orientation="vertical" android:id="@id/rd_grp_sort_by" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@color/black" android:showDividers="none">
+        <RadioButton android:textColor="@color/black" android:gravity="left" android:layout_gravity="right" android:id="@id/rd_sort_by_date" android:paddingRight="@dimen/_20sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sort_by_date" />
+        <RadioButton android:textColor="@color/black" android:gravity="left" android:layout_gravity="right" android:id="@id/rd_sort_by_type" android:paddingRight="@dimen/_20sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sort_by_type" />
+        <RadioButton android:textColor="@color/black" android:gravity="left" android:layout_gravity="right" android:id="@id/rd_sort_by_name" android:paddingRight="@dimen/_20sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sort_by_name" />
+    </RadioGroup>
+</LinearLayout>

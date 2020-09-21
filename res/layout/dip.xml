@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:id="@id/content_permission1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/txt_permission_1" />
+    <TextView android:textSize="16.0sp" android:id="@id/content_permission2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/txt_permission_2" />
+    <TextView android:textSize="16.0sp" android:id="@id/content_permission3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/txt_permission_3" />
+    <TextView android:textSize="16.0sp" android:id="@id/content_permission4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/txt_permission_4" />
+    <TextView android:textSize="16.0sp" android:id="@id/content_permission5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/txt_permission_5" />
+    <TextView android:textSize="16.0sp" android:id="@id/content_permission6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/txt_permission_6" />
+    <TextView android:textSize="16.0sp" android:id="@id/content_permission7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/txt_permission_7" />
+    <TextView android:textSize="16.0sp" android:id="@id/content_permission8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/txt_permission_8" />
+</LinearLayout>

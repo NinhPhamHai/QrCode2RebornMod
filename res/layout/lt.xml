@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/a2" android:scaleType="centerCrop" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="10.0">
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="6.0" />
+        <ImageView android:layout_gravity="center" android:id="@id/id_img_trial" android:layout_width="256.0dip" android:layout_height="0.0dip" android:layout_marginTop="16.0dip" android:src="@drawable/a9" android:layout_weight="1.0" />
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/id_img_buy" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/a4" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/id_tv_trial" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3-DAY FREE TRIAL" />
+                <TextView android:textSize="8.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/id_tv_price_yearly" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:textSize="12.0dip" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/id_tv_policy" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:maxLines="3" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:id="@id/id_img_close" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="24.0dip" android:layout_marginTop="24.0dip" android:src="@drawable/a8" android:scaleType="fitXY" />
+</RelativeLayout>

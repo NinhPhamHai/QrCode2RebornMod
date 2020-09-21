@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transfer" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/subview_create_back" />
+    <View android:background="@color/dark_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/view_title_create">
+        <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/style_border_disable_click" android:paddingTop="@dimen/_10sdp" android:paddingBottom="@dimen/_10sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginTop="@dimen/_12sdp" android:layout_marginRight="@dimen/_12sdp" android:elevation="@dimen/_5sdp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:src="@drawable/ema" />
+                <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/black_text_gray" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:text="@string/lbl_email" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/style_border_disable_click" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_12sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_marginBottom="@dimen/_20sdp" android:elevation="@dimen/_10sdp">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_12sdp">
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_8sdp" android:layout_marginBottom="@dimen/_12sdp" android:text="*" android:layout_alignParentRight="true" />
+                    <AutoCompleteTextView android:id="@id/et_to_email" android:background="@drawable/style_border_edittext" android:paddingLeft="@dimen/_10sdp" android:paddingTop="@dimen/_10sdp" android:paddingRight="@dimen/_40sdp" android:paddingBottom="@dimen/_10sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_12sdp" android:layout_marginRight="@dimen/_10sdp" android:hint="@string/lbl_to" android:inputType="textEmailAddress" android:imeOptions="actionNext">
+                        <requestFocus />
+                    </AutoCompleteTextView>
+                    <ImageView android:id="@id/iv_add_email" android:background="@drawable/style_highlight_button" android:padding="@dimen/_5sdp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_35sdp" android:layout_marginRight="@dimen/_20sdp" android:src="@drawable/radd" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <AutoCompleteTextView android:id="@id/et_subject_email" android:background="@drawable/style_border_edittext" android:padding="@dimen/_10sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp" android:hint="@string/lbl_subject" android:cursorVisible="true" android:inputType="textCapSentences" android:imeOptions="actionNext">
+                    <requestFocus />
+                </AutoCompleteTextView>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_12sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp">
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/blue_back_menu" android:id="@id/tv_number_text_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1000" android:layout_alignParentRight="true" />
+                    <AutoCompleteTextView android:id="@id/et_input_message_email" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/_20sdp" android:hint="@string/lbl_type_your_message" android:selectAllOnFocus="true" android:maxLength="1000" android:layout_below="@id/tv_number_text_event" android:inputType="textCapSentences|textMultiLine" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

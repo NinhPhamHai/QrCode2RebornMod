@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fr_view_qr_details" android:background="@drawable/gradient_blue_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@color/transfer" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btn_close_qr_details" android:background="@drawable/style_highlight_button" android:layout_width="?actionBarSize" android:layout_height="fill_parent">
+            <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/clo" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/tv_title_qr_details" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="?actionBarSize" android:layout_marginRight="?actionBarSize" android:maxLines="1" android:scrollHorizontally="true" />
+        <LinearLayout android:gravity="center" android:layout_gravity="right" android:orientation="vertical" android:id="@id/btn_share_qr_details" android:background="@drawable/style_highlight_button" android:layout_width="?actionBarSize" android:layout_height="fill_parent">
+            <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/shr" />
+        </LinearLayout>
+        <TextView android:layout_gravity="bottom" android:background="@color/dark_grey" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </FrameLayout>
+    <RelativeLayout android:background="@drawable/sp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <android.support.v7.widget.CardView android:id="@id/layout_qr_type" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_margin="16.0dip" app:cardCornerRadius="10.0dip" app:cardElevation="5.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_qr_detail_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:src="@drawable/tex" android:scaleType="centerCrop" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="70.0dip" android:layout_marginRight="60.0dip">
+                <TextView android:textSize="16.0sp" android:textStyle="normal" android:textColor="@color/bounded_grey" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_qr_details_time" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:scrollHorizontally="true" />
+                <TextView android:textSize="15.0sp" android:textStyle="normal" android:textColor="@color/bounded_grey" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_qr_details_content" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:scrollHorizontally="true" />
+            </LinearLayout>
+            <FrameLayout android:layout_gravity="right" android:id="@id/btn_qr_details_favorite" android:background="?android:selectableItemBackground" android:layout_width="60.0dip" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center" android:id="@id/iv_qr_details_no_favorite" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/tab_fav" />
+                <ImageView android:layout_gravity="center" android:id="@id/iv_qr_details_favorite" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/rfav" />
+            </FrameLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_above="@id/ll_qr_details_action" android:layout_below="@id/layout_qr_type" app:cardCornerRadius="5.0dip" app:cardElevation="5.0dip">
+            <android.support.v7.widget.RecyclerView android:id="@id/rv_qr_details" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" />
+        </android.support.v7.widget.CardView>
+        <FrameLayout android:id="@id/ll_qr_details_action" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <FrameLayout android:layout_gravity="center" android:id="@id/btn_action_qr_entity" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="50.0dip" android:minWidth="180.0dip">
+                <ImageView android:id="@id/iv_qr_details_action_background" android:background="@drawable/bg_button_pink" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/iv_qr_details_action" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/bs" />
+                    <TextView android:textSize="18.0sp" android:textStyle="normal" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/tv_qr_details_action" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add Contact" android:maxLines="1" android:scrollHorizontally="true" />
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/ll_qr_details_action_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <FrameLayout android:id="@id/btn_action_qr_sms" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginRight="4.0dip" android:layout_weight="1.0">
+                    <ImageView android:background="@drawable/bg_button_orange" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/sms" />
+                        <TextView android:textSize="18.0sp" android:textStyle="normal" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_message" android:maxLines="1" android:scrollHorizontally="true" />
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout android:id="@id/btn_action_qr_email" android:background="?android:selectableItemBackground" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="4.0dip" android:layout_weight="1.0">
+                    <ImageView android:background="@drawable/bg_button_orange" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/mail" />
+                        <TextView android:textSize="18.0sp" android:textStyle="normal" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_email" android:maxLines="1" android:scrollHorizontally="true" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

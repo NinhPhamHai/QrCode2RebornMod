@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/subview_create_back" />
+    <View android:background="@color/dark_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/style_border_disable_click" android:paddingTop="@dimen/_10sdp" android:paddingBottom="@dimen/_10sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginTop="@dimen/_12sdp" android:layout_marginRight="@dimen/_12sdp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:src="@drawable/tex" />
+        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/black_text_gray" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:text="@string/lbl_text" />
+    </LinearLayout>
+    <RelativeLayout android:background="@drawable/style_border_disable_click" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_12sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_marginBottom="@dimen/_20sdp">
+        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/blue_back_menu" android:id="@id/tv_number_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_20sdp" android:layout_marginRight="@dimen/_10sdp" android:text="200" android:layout_alignParentRight="true" />
+        <AutoCompleteTextView android:id="@id/et_input_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_5sdp" android:hint="@string/lbl_text" android:maxLength="200" android:layout_below="@id/tv_number_text" android:inputType="textCapSentences|textMultiLine" />
+    </RelativeLayout>
+</LinearLayout>
